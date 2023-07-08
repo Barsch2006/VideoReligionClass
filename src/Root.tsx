@@ -3,7 +3,7 @@ import {MainVideo} from './Main';
 
 import './style.css';
 
-const videoLenghtInSeconds = (4050)/30;
+const videoLenghtInSeconds = 4350/30;
 
 export const RemotionRoot: React.FC = () => {
 	return (

@@ -1,16 +1,15 @@
-import { AbsoluteFill, Sequence } from 'remotion';
-import { DienerKrank } from './components/DienerKrank';
-import { DienerGoes } from './components/DienerGoes';
-import { Outro } from './components/Outro';
+import {AbsoluteFill, Sequence} from 'remotion';
+import {DienerKrank} from './components/DienerKrank';
+import {DienerGoes} from './components/DienerGoes';
+import {Outro} from './components/Outro/Outro';
 import {
 	JesusAndAeltesteGo,
 	JesusAndAeltesteCome,
-	JesusAndAeltesteStand
+	JesusAndAeltesteStand,
 } from './components/JesusAndAelteste';
-import { Start } from './components/Start';
-import { Subttitle } from './components/Subttitle';
-import { HouseComing, HouseComingIn, HouseComingOut } from './components/House';
-
+import {Start} from './components/Start';
+import {Subttitle} from './components/Subttitle';
+import {HouseComing, HouseComingIn, HouseComingOut} from './components/House';
 const MainCSS = {
 	backgroundColor: '#222',
 };
@@ -73,18 +72,30 @@ export const MainVideo: React.FC = () => {
 				<HouseComing />
 			</Sequence>
 			<Sequence from={1950} durationInFrames={defaultSceneDuration}>
-				<Subttitle talking="Hauptmann" text="Herr, bemüh dich nicht! Denn ich bin es nicht wert, dass du unter mein Dach einkehrst." />
+				<Subttitle
+					talking="Hauptmann"
+					text="Herr, bemüh dich nicht! Denn ich bin es nicht wert, dass du unter mein Dach einkehrst."
+				/>
 			</Sequence>
 			<Sequence from={2250} durationInFrames={defaultSceneDuration}>
-				<Subttitle talking="Hauptmann" text="Deshalb habe ich mich selbst auch nicht für würdig gehalten, zu dir zu kommen. 
-				Aber sprich nur ein Wort, dann wird mein Diener gesund." />
+				<Subttitle
+					talking="Hauptmann"
+					text="Deshalb habe ich mich selbst auch nicht für würdig gehalten, zu dir zu kommen. 
+				Aber sprich nur ein Wort, dann wird mein Diener gesund."
+				/>
 			</Sequence>
 			<Sequence from={2550} durationInFrames={defaultSceneDuration}>
-				<Subttitle talking="Hauptmann" text="Denn auch ich muss Befehlen gehorchen und ich habe selbst Soldaten unter mir; sage ich nun zu einem: Geh!, so geht er, und zu einem andern: Komm!, so kommt er, und zu meinem Diener: Tu das!, so tut er es." />
+				<Subttitle
+					talking="Hauptmann"
+					text="Denn auch ich muss Befehlen gehorchen und ich habe selbst Soldaten unter mir; sage ich nun zu einem: Geh!, so geht er, und zu einem andern: Komm!, so kommt er, und zu meinem Diener: Tu das!, so tut er es."
+				/>
 			</Sequence>
 			{/* Jesus spricht */}
 			<Sequence from={2850} durationInFrames={defaultSceneDuration}>
-				<Subttitle talking="Jesus" text="Ich sage euch: Einen solchen Glauben habe ich in Israel nicht gefunden." />
+				<Subttitle
+					talking="Jesus"
+					text="Ich sage euch: Einen solchen Glauben habe ich in Israel nicht gefunden."
+				/>
 			</Sequence>
 			{/* Jesus geht */}
 			<Sequence from={3150} durationInFrames={defaultSceneDuration}>
@@ -95,11 +106,14 @@ export const MainVideo: React.FC = () => {
 				<HouseComingOut />
 			</Sequence>
 			<Sequence from={3450} durationInFrames={defaultSubtitleLenght}>
-				<Subttitle talking="Ältester" text="Der Diener ist Gesund, Hauptmann!" />
+				<Subttitle
+					talking="Ältester"
+					text="Der Diener ist Gesund, Hauptmann!"
+				/>
 			</Sequence>
 			{/* Outro */}
 			<Sequence from={3750} durationInFrames={defaultSceneDuration * 2}>
-				<Outro />
+				<Outro logoColor1="#91EAE4" logoColor2="#86A8E7"/>
 			</Sequence>
 		</AbsoluteFill>
 	);
