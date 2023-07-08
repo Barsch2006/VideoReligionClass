@@ -28,7 +28,7 @@ export const Start: React.FC<{StyleCSS: React.CSSProperties}> = ({
 			>
 				<p
 					style={{
-						marginTop: '260px',
+						marginTop: '350px',
 						textAlign: 'center',
 						color: '#fff',
 						fontSize: '50px',
