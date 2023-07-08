@@ -12,13 +12,14 @@ export const Subttitle: React.FC<{talking: string, text: string}> = ({talking, t
 		>
 			<div
 				style={{
-					background: '#222222aa',
+					background: '#222222f5',
 					width: '100%',
 					padding: '20px',
-					borderRadius: '10px',
+					borderRadius: '0',
 					fontFamily: 'Arial',
-					fontSize: '30px',
+					fontSize: '34px',
 					color: '#fff',
+					lineHeight: '1.3',
 				}}
 			>
 				<strong>{talking}:</strong> {text}
