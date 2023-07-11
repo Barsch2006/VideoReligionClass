@@ -1,4 +1,4 @@
-import {AbsoluteFill, Audio, Sequence, staticFile} from 'remotion';
+import {AbsoluteFill, Sequence, staticFile} from 'remotion';
 import {DienerKrank} from './components/DienerKrank';
 import {DienerGoes} from './components/DienerGoes';
 import {Outro} from './components/Outro/Outro';
@@ -113,13 +113,13 @@ export const MainVideo: React.FC = () => {
 				/>
 			</Sequence>
 			{/* Outro */}
-			<Sequence from={2970} durationInFrames={defaultSceneDuration*3}>
+			{/* <Sequence from={2970} durationInFrames={defaultSceneDuration*3}>
 				<Audio
 					startFrom={3 * 60 * 30} /* That's perfect for me (3 = min | 60 = 1 min | 30 = fps) */
 					volume={0.5}
 					src={staticFile('audio/background.mp3')}
 				/>
-			</Sequence>
+			</Sequence> */ }
 			<Sequence from={2970} durationInFrames={defaultSceneDuration * 3}>
 				<Outro logoColor1="#91EAE4" logoColor2="#86A8E7" />
 			</Sequence>
